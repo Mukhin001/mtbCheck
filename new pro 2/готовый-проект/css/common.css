@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: bisque;
+}
+
+html {
+    /* background: url(../../img/bodyFon.jpeg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainWrapperCommom {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(27, 24, 24);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}

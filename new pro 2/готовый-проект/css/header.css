@@ -1,0 +1,264 @@
+.mobile-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: inherit;
+    cursor: pointer;
+    border: 3px solid violet;
+}
+
+.mobile-btn::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: violet;
+    border-bottom: 3px solid violet;
+}
+
+.mobile-btn::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: violet;
+    margin-top: 25px;
+}
+
+.heading-fixed-block {
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 8;
+    max-width: 990px;
+}
+
+.heading-fixed-block h1 a {
+    text-decoration: none;
+    color: rgb(27, 24, 24);
+}
+
+.search-block {
+    max-width: 800px;
+    border: 2px solid rgb(27, 24, 24);
+    padding: 5px 5px 5px 20px;
+}
+
+.block-btn-topik-new-year {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* accaunt */
+.createBlockEntry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 376px;
+    background: #131317;
+    padding: 32px;
+}
+
+.inputAccaunt {
+    background: none;
+    /* border: 0 solid transparent; */
+    height: 56px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-width: 2px 16px;
+    border: 1px solid rgba(247,247,255,.9);
+    color: rgba(247,247,255,.9);
+    font-size: 24px;
+}
+
+.inputAccaunt:focus {
+    border: 3px solid rgba(247,247,255,.9);
+    outline: rgba(247,247,255,.9);
+}
+
+.btnAccAll {
+    background: none;
+    color: rgba(247,247,255,.9);
+    border: 1px solid rgba(247,247,255,.9);
+    font-size: 24px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+/* favourites */
+.favourites {
+    cursor: pointer;
+}
+
+.square-fav {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(27, 24, 24);
+    text-align: center;
+}
+
+.triangle-lr {
+    display: flex;
+}
+
+.triangle-l-fav {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 24px solid rgb(27, 24, 24);
+}
+
+.triangle-r-fav {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 24px solid rgb(27, 24, 24);
+}
+/* favourites */
+
+.btn-off-new-year {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(-45deg);
+    /* cursor: pointer; */
+}
+
+.btn-off-new-year::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.btn-off-new-year::after {
+    content: '';
+    width: 2px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.btn-topic-wrap {
+    position: relative;
+    width: 40px;
+    height: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-topic-circle {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: -6px;
+}
+
+.search-block input {
+    max-width: 200px;
+    background-color: inherit;
+    color: aliceblue;
+}
+
+.btn-find {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.show-all-card {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.weather-block {
+    padding-top: 60px;
+}
+
+.weather-block-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-block ul li {
+    list-style-type: none;
+}
+
+.choise-city {
+    cursor: pointer;
+    position: relative;
+}
+
+.choise-hide-ul {
+    display: none;
+}
+
+.choise-city ul {
+    position: absolute;
+    z-index: 12;
+}
+
+.choise-city li {
+    cursor: pointer;
+}
+
+.choise-city ul li {
+    border: 2px solid salmon;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.choise-city ul li:hover {
+    background-color: salmon;
+}
+
+.welcome-block {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+}
+
+.welcome-block h3 {
+   text-align: center;
+}
+
+.iframe {
+    position: relative;
+}
+
+.myLocal {
+    position: absolute;
+}
+
+@media(max-width: 770px) {
+    .mobile-btn {
+        display: block;
+    }
+    .heading-fixed-block {
+        position: static;
+    }
+    .weather-block {
+        padding-top: 0;
+        display: none;
+    }
+    .welcome-block {
+        display: none;
+    }
+}
